@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title%} 會員系統 {% endblock %}
+{% block message%}歡迎光臨, 這是會員頁{% endblock %}
+
+{% block main%}
+<div class="memberMain">
+    <h2>恭喜你 成功登入系統</h2>
+    <a href="/signout">登出系統</a>
+</div>
+
+{% endblock %}
+    
+    
+
+{% block style %}
+<style>
+    .memberMain{
+        text-align: center;
+    }
+</style>
+{% endblock %}

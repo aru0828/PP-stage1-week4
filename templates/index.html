@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block message%} 歡迎光臨,請輸入帳號密碼 {% endblock %}
+
+{% block main%}
+<form action="signin" method="POST" class="loginForm">
+    <div>
+        <h2>使用者登入</h2>
+        <div class="inputGroup">
+            <label for="account">帳號: </label>
+            <input type="text" name="account">
+            <br>
+            <label for="password">密碼: </label>
+            <input type="password" name="password">
+            <br>
+        </div>
+      
+
+        <button class="loginBtn">登入</button>
+    </div>
+   
+</form>
+{% endblock%}
+   
+{% block style %}
+<style>
+    .loginForm{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .loginForm .inputGroup{
+        margin-bottom: 20px;
+    }
+
+</style>
+{% endblock%}

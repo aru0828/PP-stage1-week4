@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title%} 登入失敗 {% endblock %}
+
+{% block message%}失敗頁面{% endblock %}
+
+{% block main%}
+<div class="errorMain">
+    <h2>帳號或密碼輸入錯誤</h2>
+    <a href="/">重新登入</a>
+</div>
+{% endblock%}
+
+
+{% block style %}
+<style>
+    .errorMain{
+        text-align: center;
+    }
+</style>
+{% endblock %}

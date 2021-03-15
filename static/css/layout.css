@@ -1,0 +1,14 @@
+
+.messageBar {
+    height: 100px;
+    background: #232323;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBar h3 {
+    font-size: 36px;
+    font-weight: bolder;
+}
